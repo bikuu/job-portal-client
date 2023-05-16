@@ -5,7 +5,7 @@ import LeftBar from "./../../components/leftBar/LeftBar";
 
 const Home = () => {
   return (
-    <div class="d-flex">
+    <div class="d-lg-flex d-sm-block">
       <LeftBar />
       <Middle />
       <RightBar />

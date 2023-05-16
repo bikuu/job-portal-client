@@ -38,9 +38,34 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav gap-lg-5 gap-sm-1">
-            <a class="nav-link active" aria-current="page" href="#">
-              Browse Jobs
-            </a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse Job
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </div>
             <a class="nav-link" href="#">
               About Us
             </a>

@@ -1,19 +1,14 @@
 import React from "react";
+import Card from "../card/Card";
 
 const Middle = () => {
   return (
-    <div class="border border-success border-opacity-25 rounded p-2  w-lg-50 w-sm-100 mt-sm-2  ms-2 me-2">
-      <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form>
+    <div class="border border-success border-opacity-25 rounded p-2 w-100 mt-sm-2  ms-2 me-2">
+      <div class="ms-2 text-decoration-underline">
+        <h4>Latest Jobs</h4>
+      </div>
+
+      <Card />
     </div>
   );
 };

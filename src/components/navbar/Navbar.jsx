@@ -10,18 +10,6 @@ const Navbar = () => {
         <a class="navbar-brand" href="#">
           Job Portal
         </a>
-
-        <form class="d-sm-flex d-lg-none" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
         <button
           class="navbar-toggler"
           type="button"

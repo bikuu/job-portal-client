@@ -4,9 +4,9 @@ import { categories } from "../../assets/categories";
 const LeftBar = () => {
   const [show, setShow] = useState(false);
   return (
-    <div class=" border border-info border-opacity-25 rounded p-2 w-lg-25 w-sm-100 ms-2">
+    <div class=" border border-info border-opacity-25 rounded p-2 flex-shrink-1 w-sm-100 ms-2">
       <div>
-        <div class="card">
+        <div class="card" style={{ width: "300px" }}>
           <div class="card-header">
             <h2 class="mb-0 h6">
               <strong>Jobs By Category</strong>

@@ -2,7 +2,7 @@ import React from "react";
 
 const RightBar = () => {
   return (
-    <div class="d-sm-flex justify-content-sm-around d-lg-block border border-info border-opacity-25 rounded p-2 w-lg-25 w-sm-50">
+    <div class="d-sm-flex justify-content-sm-around d-lg-block border border-info border-opacity-25 rounded p-2 flex-shrink-1  w-sm-50  ">
       <div class="card">
         <div class="card-header">
           <h2 class="mb-0 h6">

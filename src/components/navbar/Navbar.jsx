@@ -2,10 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav
-      class="navbar navbar-expand-lg "
-      style={{ backgroundColor: " #adb5bd" }}
-    >
+    <nav class="navbar navbar-expand-lg bg-light ">
       <div class="container-fluid ms-lg-5 ">
         <a class="navbar-brand" href="#">
           Job Portal

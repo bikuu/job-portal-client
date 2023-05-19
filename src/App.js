@@ -3,6 +3,7 @@ import Banner from "./components/banner/Banner";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import SearchBar from "./components/searchBar/SearchBar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <SearchBar />
       <Home />
+      <Footer />
     </div>
   );
 }

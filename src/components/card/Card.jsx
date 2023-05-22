@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div class="row row-cols-1 row-cols-md-3 g-4" style={{ cursor: "pointer" }}>
+    <>
       <div class="col">
         <div class="card h-100">
           <img
@@ -113,7 +113,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

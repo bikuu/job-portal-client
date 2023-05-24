@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ title }) => {
   return (
     <>
       <div class="col">
@@ -8,7 +8,7 @@ const Card = () => {
           <img
             src="https://images.pexels.com/photos/4052752/pexels-photo-4052752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="card-img-top"
-            style={{ height: "150px", objectFit: "cover" }}
+            style={{ height: !title ? "150px" : "50px", objectFit: "cover" }}
             alt="..."
           />
           <div class="card-body">
@@ -20,12 +20,18 @@ const Card = () => {
             </p>
 
             <h5 class="card-title ">Jr. MERN Stack Developer</h5>
-            <p class="fs-6 mb-0">Full Time, Part Time, Freelance</p>
-            <p class="fw-semibold  mb-0">Baneswor, Kathmandu</p>
+            {!title && (
+              <>
+                <p class="fs-6 mb-0">Full Time, Part Time, Freelance</p>
+                <p class="fw-semibold  mb-0">Baneswor, Kathmandu</p>
+              </>
+            )}
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Job Added 3 mins Ago</small>
-          </div>
+          {!title && (
+            <div class="card-footer">
+              <small class="text-muted">Job Added 3 mins Ago</small>
+            </div>
+          )}
         </div>
       </div>
       <div class="col">

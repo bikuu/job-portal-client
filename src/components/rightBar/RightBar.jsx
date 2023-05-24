@@ -1,8 +1,13 @@
 import React from "react";
+import ImageSlider from "../imageSlider/ImageSlider";
+import Card from "./../card/Card";
 
 const RightBar = () => {
   return (
-    <div class="d-sm-flex justify-content-sm-around d-lg-block border border-info border-opacity-25 rounded p-2 flex-shrink-1  w-sm-50  ">
+    <div
+      class="d-sm-flex justify-content-sm-around d-lg-block border border-info border-opacity-25 rounded p-2 flex-shrink-1  w-sm-50  "
+      style={{ width: "350px" }}
+    >
       <div class="card">
         <div class="card-header">
           <h2 class="mb-0 h6">
@@ -25,63 +30,19 @@ const RightBar = () => {
         </div>
       </div>
 
-      <div class="card mt-lg-2 ms-sm-2">
+      <ImageSlider data="Top Hiring Companies" />
+      <div class="card mt-2 mb-2">
         <div class="card-header">
           <h2 class="mb-0 h6">
-            <strong>Top Hiring Companies</strong>
+            <strong>Popular Jobs</strong>
           </h2>
         </div>
-        <div
-          id="carouselExampleFade"
-          class="carousel slide carousel-fade rounded mt-2"
-          data-bs-ride="carousel"
-          style={{ width: "300px", height: "200px" }}
-        >
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img
-                src="https://images.pexels.com/photos/5731866/pexels-photo-5731866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
-                style={{ height: "200px", objectFit: "cover" }}
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/4052752/pexels-photo-4052752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
-                style={{ height: "200px", objectFit: "cover" }}
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.pexels.com/photos/712857/pexels-photo-712857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="d-block w-100"
-                alt="..."
-                style={{ height: "200px", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-1 g-4"
+        style={{ cursor: "pointer" }}
+      >
+        <Card title= "rightBar" />
       </div>
     </div>
   );

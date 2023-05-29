@@ -42,7 +42,35 @@ const RightBar = () => {
         class="row row-cols-1 row-cols-md-1 g-4"
         style={{ cursor: "pointer" }}
       >
-        <Card title= "rightBar" />
+        <Card title="rightBar" />
+      </div>
+      {/* Jobs by same Company */}
+      <div class="card mt-2 mb-2">
+        <div class="card-header">
+          <h2 class="mb-0 h6">
+            <strong> More Jobs by Same Company</strong>
+          </h2>
+        </div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-1 g-4"
+        style={{ cursor: "pointer" }}
+      >
+        <Card title="rightBar" />
+      </div>
+      {/* Similar Jobs */}
+      <div class="card mt-2 mb-2">
+        <div class="card-header">
+          <h2 class="mb-0 h6">
+            <strong>Similar Jobs </strong>
+          </h2>
+        </div>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-1 g-4"
+        style={{ cursor: "pointer" }}
+      >
+        <Card title="rightBar" />
       </div>
     </div>
   );

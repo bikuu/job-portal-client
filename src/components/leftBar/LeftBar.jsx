@@ -1,4 +1,5 @@
 import ImageSlider from "../imageSlider/ImageSlider";
+import SideProfile from "../sideProfile/SideProfile";
 import JobCategory from "./jobCategory/JobCategory";
 
 const LeftBar = () => {
@@ -9,6 +10,7 @@ const LeftBar = () => {
     >
       <JobCategory />
       <ImageSlider data="Our Social Networks" />
+      <SideProfile />
     </div>
   );
 };

@@ -1,14 +1,17 @@
 import React from "react";
 import ImageSlider from "../imageSlider/ImageSlider";
 import Card from "./../card/Card";
+import SideProfile from "./../sideProfile/SideProfile";
+import PieChart from "../pieChart/PieChart";
+import BarChart from "../barChart/BarChart";
 
 const RightBar = () => {
   return (
     <div
       class="d-sm-flex justify-content-sm-around d-lg-block border border-info border-opacity-25 rounded p-2 flex-shrink-1  w-sm-50  "
-      style={{ width: "350px" }}
+      // style={{ width: "350px" }}
     >
-      <div class="card">
+      {/* <div class="card">
         <div class="card-header">
           <h2 class="mb-0 h6">
             <strong>Jobs By Employment Type</strong>
@@ -28,9 +31,9 @@ const RightBar = () => {
             Freelance
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <ImageSlider data="Top Hiring Companies" />
+      {/* <ImageSlider data="Top Hiring Companies" />
       <div class="card mt-2 mb-2">
         <div class="card-header">
           <h2 class="mb-0 h6">
@@ -43,35 +46,39 @@ const RightBar = () => {
         style={{ cursor: "pointer" }}
       >
         <Card title="rightBar" />
-      </div>
+      </div> */}
       {/* Jobs by same Company */}
-      <div class="card mt-2 mb-2">
+      {/* <div class="card mt-2 mb-2">
         <div class="card-header">
           <h2 class="mb-0 h6">
             <strong> More Jobs by Same Company</strong>
           </h2>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         class="row row-cols-1 row-cols-md-1 g-4"
         style={{ cursor: "pointer" }}
       >
         <Card title="rightBar" />
-      </div>
+      </div> */}
       {/* Similar Jobs */}
-      <div class="card mt-2 mb-2">
+      {/* <div class="card mt-2 mb-2">
         <div class="card-header">
           <h2 class="mb-0 h6">
             <strong>Similar Jobs </strong>
           </h2>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         class="row row-cols-1 row-cols-md-1 g-4"
         style={{ cursor: "pointer" }}
       >
         <Card title="rightBar" />
-      </div>
+      </div> */}
+
+      <SideProfile />
+      <PieChart />
+      <BarChart />
     </div>
   );
 };

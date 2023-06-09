@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import SearchBar from "./components/searchBar/SearchBar";
 import Footer from "./components/footer/Footer";
 import ViewProfile from "./components/viewProfile/ViewProfile";
+import EditProfile from "./components/editProfile/EditProfile";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Banner />
       <SearchBar />
       <Home /> */}
-      <ViewProfile />
+      {/* <ViewProfile /> */}
+      <EditProfile />
       <Footer />
     </div>
   );
